@@ -39,7 +39,7 @@ At this point it is important to realize there is a discrete and continuous vers
 1. Defining a convolution kernel $K$, such as $K : \mathcal{N} \xrightarrow[]{} S$, this step computes the **potential distribution** of the lenia, computed with the convolution operation:
 
 $$
-U^t(x) = K \circledast A^t(x)
+U^t(x) = K \ast A^t(x)
 $$
 2. 
 
