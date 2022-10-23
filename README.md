@@ -22,7 +22,7 @@ $$
 \psi(A^0) = A^{\Delta t}..., \psi(A^t) = A^{t + N\Delta t}
 $$
 
-$N$ being the amount of time steps taken. In the case of Lenia, the ensemble of possible states per site is not limited to $\{0, 1\}$ but written in all generality as $\{0, 1, ... P - 1, P\}$ where $P\in \Z$. For symplicity and handling of numbers we chose to represent those states as $\Delta p = \frac{1}{P}$. A state can thus for example be represented as (for example $P = 5$, $A^t(x) = [0.04, 0.6, 1, 0.6]$). 
+$N$ being the amount of time steps taken. In the case of Lenia, the ensemble of possible states per site is not limited to $\{0, 1\}$ but written in all generality as $\{0, 1, ... P - 1, P\}$ where $P\in \mathbb{Z}$. For symplicity and handling of numbers we chose to represent those states as $\Delta p = \frac{1}{P}$. A state can thus for example be represented as (for example $P = 5$, $A^t(x) = [0.04, 0.6, 1, 0.6]$). 
 
 **It is a cellular automata, how do we deal with neiborhoods then ?**
 
