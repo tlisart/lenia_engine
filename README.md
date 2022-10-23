@@ -26,4 +26,24 @@ $N$ being the amount of time steps taken. In the case of Lenia, the ensemble of 
 
 **It is a cellular automata, how do we deal with neiborhoods then ?**
 
-In the classic Conway's game of life, one uses the 9 cells around the cell being tested to evaluate whether or not the tried cell has to be added or removed. In the context of Lenia those particularities are being generalized introducing discontinious and continuous aspects. 
+In the classic Conway's game of life, one uses the 9 cells around the cell being tested to evaluate whether or not the tried cell has to be added or removed. In the context of Lenia those particularities are being generalized introducing discontinious and continuous aspects. In the case of Lenia we are dealing with distance circle or a ball of radius $R$ centered on a site $x$. We define thus the ball: 
+
+$$
+\mathcal{N} = \{x \in \mathcal{L} : ||x||_2 \leq R\}
+$$
+
+Two things to note then: first the site itself can be included in the ball vector, second the value is not an absolute position but a relative position depending on any given site.
+
+At this point it is important to realize there is a discrete and continuous version of Lenia. Here we'll start by the discrete version then generalize it to continuous. in both cases however we are applying the same transform: 
+
+1. Defining a convolution kernel $K$, such as $K : \mathcal{N} \xrightarrow[]{} S$, this step computes the **potential distribution** of the lenia, computed with the convolution operation:
+
+$$
+U^t(x) = K\circledast*A^t(x)
+
+$$
+2. 
+
+
+
+
