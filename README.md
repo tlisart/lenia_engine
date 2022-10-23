@@ -39,10 +39,27 @@ At this point it is important to realize there is a discrete and continuous vers
 1. Defining a convolution kernel $K$, such as $K : \mathcal{N} \xrightarrow[]{} S$, this step computes the **potential distribution** of the lenia, computed with the convolution operation:
 
 $$
-U^t(x) = K \ast A^t(x)
+U^t(x) = K * A^t(x)
 $$
-2. 
+Where the asterix is referencing the convolution operation. 
 
 
+2. The second step is establishing the growth mapping from the potential distribution to the new iterated step. The growth function is discovered by: $G : [0, 1] \xrightarrow{}[] [-1, 1]$ and we get : 
 
+$$
+G^t(x) = G(U^t(x))
+$$
 
+There's only one technical step left, one has to scale §G§ to the time step $\Delta t$ and execute the update rule to get the new state. 
+
+$$
+A^{t + \Delta t} = clp(A^t + \Delta t G^t(x), 0, 1)
+$$
+
+The clip function written $clp$ is introduced: 
+
+$$
+clp(v, a, b) \equiv min(max(v, a), b)
+$$
+
+This is were the subtelty for discrete and continuous Lenia is appearing. We ought to select a *local* update rule, now that we have a global update method or approaches. 
