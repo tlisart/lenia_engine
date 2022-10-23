@@ -13,5 +13,13 @@ Without further addue, let's get intro the mathematics and principles of Lenia a
 
 ## All the theory at once 
 
-Being a cellular automata, Lenia updates it's state to discover the next state. In this particular case, the world is not divided into binary grids (cells being alive or dead) each iteration is an output of the previous one through some function. Let $\mathcal{L}$ be a discrete lattice with $S^\mathcal{L}$ states. 
+Being a cellular automata, Lenia updates it's state to discover the next state. In this particular case, the world is not divided into binary grids (cells being alive or dead) each iteration is an output of the previous one through some function. 
 
+
+Let $\mathcal{L}$ be a discrete lattice with $S^\mathcal{L}$ states. Let also $\psi$ be a _global_ rule, i.e. the rule representing the application of all local rules over the lattice (over every _site_ of the lattice). The particularity with Lenia is that it generalizes Conway's Game of Life, i.e. time **and** space are both discretized up to a certain resolution but considered continuous to the stable limit. If $A^0$ is the initial state of the lattice, the time step is written $\Delta t$ where then the time *resolution* is given by $T = \frac{1}{\Delta t}$
+
+$$
+\psi(A^0) = A^{\Delta t}..., \psi(A^t) = A^{t + N\Delta t}
+$$
+
+$N$ being the amount of time steps taken. 
