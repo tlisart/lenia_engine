@@ -9,4 +9,4 @@ Being the first Rust project I am starting, bugs and failure to comply with some
 
 Lenia is a generalization of no-player games such as Conway's Game Of Life that a lot of people are aware of. Lenia offers a lot of different, suprising and complex emergent patterns in comparison to other game of lifes, it has some interesting properties that one can read on the [open science](https://chakazul.github.io/lenia.html) page. The gliders and other structures have been referenced and is still an active field of research. 
 
-Without further addue, let's get intro the mathematics of Lenia. 
+Without further addue, let's get intro the mathematics and principles of Lenia and how we can do some basic research on it to discover some numerical organisms ! 
